@@ -1,4 +1,4 @@
-# A1_2 Resource Management Software (RMS)
+# A1_2 : Resource Management Software (RMS)
 
 ## Overview
 RMS is an ASP.NET Core MVC web application that showcases a Bootstrap-powered site with multiple routes. The site includes pages for 
