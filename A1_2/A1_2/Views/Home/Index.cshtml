@@ -2,7 +2,14 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    <h1 class="display-4 text-center mt-5">Welcome to Resource Management App</h1>
+    <p class="lead text-center">You can create resources and assign them with multiple projects.</p>
+    
+    <img class="w-25 p-5 m-auto d-flex" src="resource_management_app.svg" />
+    
+    <div class="d-flex w-100 justify-content-center mx-auto gap-4">
+        <a class="btn px-4 btn-lg btn-outline-primary" asp-controller="Projects" asp-action="Index">Projects</a>
+        <a class="btn px-3 btn-lg btn-outline-success" asp-controller="Resources" asp-action="Index">Resources</a>
+    </div>
 </div>
