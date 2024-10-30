@@ -20,7 +20,7 @@ builder.Services.AddIdentity<A2User, IdentityRole>(options =>
         options.Lockout.MaxFailedAccessAttempts = 10;
     })
     .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
-builder.Services.ConfigureApplicationCookie(options => { options.AccessDeniedPath = "/Auth/AccessDenied"; });
+builder.Services.ConfigureApplicationCookie(options => { options.AccessDeniedPath = "/Auth/AccessDenied"; options.LoginPath = "/Auth/Login";  options.LogoutPath = "/Auth/Logout"; });
 
 builder.Services.AddControllersWithViews();
 

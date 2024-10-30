@@ -3,18 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Authorization App</title>
+    <title>@ViewData["Title"] - Shoppers | Ultimate shopping destinations</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="~/logo.svg" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body class="flex flex-col min-h-screen">
 <header>
-    <nav class="bg-gradient-to-r from-indigo-800 to-purple-700 border-b shadow-md">
+    <nav class="bg-black border-b shadow-md">
         <div class="container mx-auto flex flex-wrap justify-between items-center p-4 px-6">
             <div class="flex text-white flex-wrap items-center gap-4">
                 <a class="text-xl font-bold mr-5" asp-area="" asp-controller="Home" asp-action="Index">SHOPPERS</a>
                 <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Product" asp-action="Index">Products</a>
+                <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
                 <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Editor" asp-action="Index">Inventory</a>
                 <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Admin" asp-action="Index">Admin Panel</a>
             </div>

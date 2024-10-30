@@ -1,0 +1,19 @@
+@model IEnumerable<Product>
+
+<div class="container mx-auto my-16">
+    <h2 class="text-3xl font-semibold mb-8 text-gray-800">All Products</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        @foreach (var product in Model)
+        {
+        <div class="border border-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+            <img src="@product.Image" alt="Product 1" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-2xl font-semibold mb-2">@product.Name</h3>
+            <p class="text-gray-600 mb-4">@product.ShortDescription</p>
+            <div class="flex justify-between items-center">
+                <span class="text-purple-900 font-bold text-lg">$@product.Price</span>
+                <a asp-controller="Products" asp-action="Details" asp-route-id="@product.Id" class="px-4 py-2 bg-purple-900 text-white rounded-full hover:bg-purple-950 transition">Watch Detail</a>
+            </div>
+        </div>
+        }
+    </div>
+</div>
