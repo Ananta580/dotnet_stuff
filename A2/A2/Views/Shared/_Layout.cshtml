@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Authorization App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="flex flex-col min-h-screen">
+<header>
+    <nav class="bg-gradient-to-r from-indigo-800 to-purple-700 border-b shadow-md">
+        <div class="container mx-auto flex flex-wrap justify-between items-center p-4 px-6">
+            <div class="flex text-white flex-wrap items-center gap-4">
+                <a class="text-xl font-bold mr-5" asp-area="" asp-controller="Home" asp-action="Index">SHOPPERS</a>
+                <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Product" asp-action="Index">Products</a>
+                <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Editor" asp-action="Index">Inventory</a>
+                <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Admin" asp-action="Index">Admin Panel</a>
+            </div>
+            
+            <div class="md:flex md:items-center md:space-x-4 justify-between">
+                <div class="ml-auto">
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+</header>
+
+<div class="container mx-auto flex-grow p-6 relative">
+    <main role="main">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-t bg-gradient-to-r from-black via-zinc-900 to-black text-center text-gray-100 w-full">
+    <div class="container mx-auto py-4">
+        &copy; 2024 - Shoppers - Your ultimate online shopping website   <a class="text-blue-200 hover:underline mx-6" asp-controller="Home" asp-action="Privacy">Terms & Conditions</a>
+    </div>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+
+<script>
+    // JavaScript to handle navbar toggle on mobile
+    const toggleButton = document.getElementById('navbar-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+</body>
+</html>
