@@ -8,34 +8,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2344d9d-1776-49c3-b06e-ad4feb4b7c61" name="Changes" comment="Commited changes for code">
-      <change afterPath="$PROJECT_DIR$/A2/Models/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/Views/Editor/Create.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/Views/Editor/Delete.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/Views/Editor/Edit.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/Views/Editor/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/Views/Products/Details.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/wwwroot/images/a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/wwwroot/images/b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/wwwroot/images/c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/wwwroot/logo.svg" afterDir="false" />
+    <list default="true" id="c2344d9d-1776-49c3-b06e-ad4feb4b7c61" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/A2/Views/Admin/AddUser.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.A2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Controllers/EditorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Controllers/EditorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Controllers/ProductsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/Controllers/EditorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Controllers/InventoryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Models/Product.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/Views/Admin/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Admin/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/Views/Auth/AccessDenied.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Auth/AccessDenied.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/Views/Auth/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Auth/Login.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/Views/Auth/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Auth/Register.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Editor/index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Home/Privacy.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Product/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Products/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/Views/Editor/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Inventory/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/Views/Editor/Delete.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Inventory/Delete.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/Views/Editor/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Inventory/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/Views/Editor/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Inventory/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/A2/app.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/wwwroot/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/app.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/app.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/app.db-wal" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,10 +57,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file:///usr/local/share/dotnet/sdk/7.0.316/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.Shared.targets" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -76,25 +70,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.A2: http.executor": "Run",
-    ".NET Launch Settings Profile.A2: https.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.A2: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.A2: https.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.A2: https">
     <configuration name="A2: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/A2/A2.csproj" />
@@ -138,7 +132,10 @@
       <workItem from="1730239738882" duration="1180000" />
       <workItem from="1730240922100" duration="1300000" />
       <workItem from="1730244730060" duration="160000" />
-      <workItem from="1730250431007" duration="19289000" />
+      <workItem from="1730250431007" duration="21621000" />
+      <workItem from="1730312721613" duration="3743000" />
+      <workItem from="1730322855010" duration="890000" />
+      <workItem from="1730332934879" duration="1539000" />
     </task>
     <task id="LOCAL-00001" summary="Commited changes for code">
       <option name="closed" value="true" />
@@ -148,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730305729732</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lots of changes">
+      <option name="closed" value="true" />
+      <created>1730310344085</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730310344085</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +165,8 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Commited changes for code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commited changes for code" />
+    <MESSAGE value="Lots of changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lots of changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -177,6 +183,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/A2/Controllers/AuthController.cs</url>
+          <line>35</line>
+          <properties documentPath="$PROJECT_DIR$/A2/Controllers/AuthController.cs" containingFunctionPresentation="Method 'Register'">
+            <startOffsets>
+              <option value="1008" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1032" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/A2/Controllers/InventoryController.cs</url>
+          <line>33</line>
+          <properties documentPath="$PROJECT_DIR$/A2/Controllers/InventoryController.cs" containingFunctionPresentation="Method 'Create'">
+            <startOffsets>
+              <option value="747" />
+            </startOffsets>
+            <endOffsets>
+              <option value="770" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

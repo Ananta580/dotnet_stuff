@@ -1,6 +1,59 @@
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Admin Panel";
     Layout = "_Layout";
 }
 
-<h2>title</h2>
+<div class="max-w-6xl mx-auto my-8 p-4">
+    <h2 class="text-3xl font-semibold mb-6">Admin Panel</h2>
+    <p class="-mt-10 mb-8 text-right">
+        <a asp-action="AddUser" class="text-white bg-purple-700 hover:bg-purple-800 px-6 py-3 rounded-md shadow-md">Add User</a>
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-lg font-bold">Total Users</h3>
+            <p class="text-2xl font-semibold text-purple-600">150</p>
+            <p class="text-gray-500">Number of registered users</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-lg font-bold">Total Sales</h3>
+            <p class="text-2xl font-semibold text-purple-600">$12,300</p>
+            <p class="text-gray-500">Total sales this month</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-lg font-bold">New Orders</h3>
+            <p class="text-2xl font-semibold text-purple-600">45</p>
+            <p class="text-gray-500">New orders placed today</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-lg font-bold">Pending Reviews</h3>
+            <p class="text-2xl font-semibold text-purple-600">12</p>
+            <p class="text-gray-500">Reviews awaiting approval</p>
+        </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg p-6">
+        <h3 class="text-lg font-bold mb-4">Recent Activity</h3>
+        <ul class="space-y-2">
+            <li class="flex justify-between">
+                <span class="text-gray-700">User1 registered</span>
+                <span class="text-gray-500 text-sm">10 mins ago</span>
+            </li>
+            <li class="flex justify-between">
+                <span class="text-gray-700">Order #1234 created</span>
+                <span class="text-gray-500 text-sm">30 mins ago</span>
+            </li>
+            <li class="flex justify-between">
+                <span class="text-gray-700">User2 left a review</span>
+                <span class="text-gray-500 text-sm">1 hour ago</span>
+            </li>
+            <li class="flex justify-between">
+                <span class="text-gray-700">User3 updated their profile</span>
+                <span class="text-gray-500 text-sm">2 hours ago</span>
+            </li>
+        </ul>
+    </div>
+</div>

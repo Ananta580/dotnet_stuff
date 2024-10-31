@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - Shoppers | Ultimate shopping destinations</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/x-icon" href="~/logo.svg" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="icon" type="image/x-icon" href="~/logo.svg"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
 </head>
 <body class="flex flex-col min-h-screen">
 <header>
@@ -15,18 +15,28 @@
             <div class="flex text-white flex-wrap items-center gap-4">
                 <a class="text-xl font-bold mr-5" asp-area="" asp-controller="Home" asp-action="Index">SHOPPERS</a>
                 <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
-                <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Editor" asp-action="Index">Inventory</a>
-                <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Admin" asp-action="Index">Admin Panel</a>
+                @if (User.Identity!.IsAuthenticated)
+                {
+                    <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+                    if (User.IsInRole("Admin") || User.IsInRole("Editor"))
+                    {
+                        <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Inventory" asp-action="Index">Inventory</a>
+                    }
+
+                    if (User.IsInRole("Admin"))
+                    {
+                        <a class="text-gray-200 hover:border-b" asp-area="" asp-controller="Admin" asp-action="Index">Admin Panel</a>
+                    }
+                }
             </div>
-            
+
             <div class="md:flex md:items-center md:space-x-4 justify-between">
                 <div class="ml-auto">
-                    <partial name="_LoginPartial" />
+                    <partial name="_LoginPartial"/>
                 </div>
             </div>
         </div>
-        
+
     </nav>
 </header>
 
@@ -38,7 +48,7 @@
 
 <footer class="border-t bg-gradient-to-r from-black via-zinc-900 to-black text-center text-gray-100 w-full">
     <div class="container mx-auto py-4">
-        &copy; 2024 - Shoppers - Your ultimate online shopping website   <a class="text-blue-200 hover:underline mx-6" asp-controller="Home" asp-action="Privacy">Terms & Conditions</a>
+        &copy; 2024 - Shoppers - Your ultimate online shopping website <a class="text-blue-200 hover:underline mx-6" asp-controller="Home" asp-action="Privacy">Terms & Conditions</a>
     </div>
 </footer>
 

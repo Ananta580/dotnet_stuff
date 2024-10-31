@@ -1,16 +1,24 @@
-﻿@using Microsoft.AspNetCore.Identity
+﻿@using System.Security.Claims
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.TagHelpers
 @inject SignInManager<A2User> SignInManager
 @inject UserManager<A2User> UserManager
+
+@{
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    var roles = userId!=null?await UserManager.GetRolesAsync((await UserManager.FindByIdAsync(userId))!):null;
+}
 
 <ul class="flex space-x-4">
     @if (SignInManager.IsSignedIn(User))
     {
     <li>
         <span class="text-gray-100 font-semibold">Hello @User.Identity?.Name!</span>
+        <span class="rounded-full text-xs bg-purple-800 text-white px-2 py-1">@roles[0]</span>
     </li>
     <li>
         <form asp-controller="Auth" asp-action="Logout">
-            <button type="submit" class="text-gray-200 hover:text-blue-300 focus:outline-none">Logout</button>
+            <button type="submit" class="text-gray-200 hover:text-blue-300 focus:outline-none ml-2"> Logout</button>
         </form>
     </li>
     }

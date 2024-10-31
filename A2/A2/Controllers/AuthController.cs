@@ -73,7 +73,15 @@ public class AuthController : Controller
             await _roleManager.CreateAsync(new IdentityRole(model.Role));
         }
 
-        await _userManager.AddToRoleAsync(user, model.Role);
+        var roleResult = await _userManager.AddToRoleAsync(user, model.Role);
+        if (!roleResult.Succeeded)
+        {
+            foreach (var error in roleResult.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+            return View(model);
+        }
         await _signInManager.SignInAsync(user, isPersistent: false);
         return RedirectToAction("Index", "Home");
     }

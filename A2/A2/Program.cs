@@ -5,12 +5,14 @@ using A2.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ??
                        throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+// Add Identity services
 builder.Services.AddIdentity<A2User, IdentityRole>(options =>
     {
         options.Password.RequireDigit = true;
@@ -49,3 +51,20 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+
+//  API Endpoints and Access Control
+
+// - /Home or /     (Access to all)
+
+//  - /Products     (Access to users with role "User", "Editor", "Admin")
+//     - /Details/{id}
+
+// - /Inventory     (Access to users with role "Editor", "Admin")
+//     - /Inventory/Create
+//     - /Inventory/Edit/{id}
+//     - /Inventory/Delete/{id}
+
+// - /Admin         (Access to users with role "Admin")
+//     - /
+//     - /AddUser
