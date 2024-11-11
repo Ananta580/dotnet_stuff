@@ -6,29 +6,45 @@
 
 @{
     var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-    var roles = userId!=null?await UserManager.GetRolesAsync((await UserManager.FindByIdAsync(userId))!):null;
+    var roles = new List<string>();
+    A2User? user = null;
+    if (userId != null)
+    {
+        user = await UserManager.FindByIdAsync(userId);
+        if (user != null)
+        {
+            roles = (List<string>)await UserManager.GetRolesAsync(user);
+        }
+    }
 }
+
 
 <ul class="flex space-x-4">
     @if (SignInManager.IsSignedIn(User))
     {
-    <li>
-        <span class="text-gray-100 font-semibold">Hello @User.Identity?.Name!</span>
-        <span class="rounded-full text-xs bg-purple-800 text-white px-2 py-1">@roles[0]</span>
-    </li>
-    <li>
-        <form asp-controller="Auth" asp-action="Logout">
-            <button type="submit" class="text-gray-200 hover:text-blue-300 focus:outline-none ml-2"> Logout</button>
-        </form>
-    </li>
+        <li>
+            @if (user != null)
+            {
+                <span class="text-gray-100 font-semibold">@user.FirstName @user.LastName</span>
+                @if (roles.Count > 0)
+                {
+                    <span class="rounded-full text-xs bg-purple-800 text-white px-2 py-1">@roles[0]</span>
+                }
+            }
+        </li>
+        <li>
+            <form asp-controller="Auth" asp-action="Logout">
+                <button type="submit" class="text-gray-200 hover:text-blue-300 focus:outline-none ml-2"> Logout</button>
+            </form>
+        </li>
     }
     else
     {
-    <li>
-        <a class="text-gray-200 transition-all duration-200 rounded-full" asp-controller="Auth" asp-action="Register">Register</a>
-    </li>
-    <li>
-        <a class="text-black border bg-gray-100 px-5 py-1 transition-all duration-200 rounded-full" asp-controller="Auth" asp-action="Login">Login</a>
-    </li>
+        <li>
+            <a class="text-gray-200 transition-all duration-200 rounded-full" asp-controller="Auth" asp-action="Register">Register</a>
+        </li>
+        <li>
+            <a class="text-black border bg-gray-100 px-5 py-1 transition-all duration-200 rounded-full" asp-controller="Auth" asp-action="Login">Login</a>
+        </li>
     }
 </ul>

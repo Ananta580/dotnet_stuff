@@ -52,19 +52,31 @@ app.MapControllerRoute(
 
 app.Run();
 
+/* For full documentation on this project, check readme.md  */
 
-//  API Endpoints and Access Control
+/*
 
-// - /Home or /     (Access to all)
+API Endpoints and Access Control
 
-//  - /Products     (Access to users with role "User", "Editor", "Admin")
-//     - /Details/{id}
+(Access to all)
+- /Home or /  
+- /Auth
+    - /Login
+    - /Register   
 
-// - /Inventory     (Access to users with role "Editor", "Admin")
-//     - /Inventory/Create
-//     - /Inventory/Edit/{id}
-//     - /Inventory/Delete/{id}
+(Access to users with role "User", "Editor", "Admin")
+  - /Products     
+     - /Details/{id}
 
-// - /Admin         (Access to users with role "Admin")
-//     - /
-//     - /AddUser
+(Access to users with role "Editor", "Admin")
+ - /Inventory         
+     - /Inventory/Create
+     - /Inventory/Edit/{id}
+     - /Inventory/Delete/{id}
+
+(Access to users with role "Admin")
+ - /Admin         
+     - /
+     - /AddUser
+     
+*/

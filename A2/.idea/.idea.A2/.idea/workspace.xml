@@ -9,27 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2344d9d-1776-49c3-b06e-ad4feb4b7c61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/A2/Views/Admin/AddUser.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.A2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Controllers/AdminController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Controllers/EditorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Controllers/InventoryController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Models/Product.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Admin/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Admin/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Auth/AccessDenied.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Auth/AccessDenied.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Auth/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Auth/Login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Auth/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Auth/Register.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Editor/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Inventory/Create.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Editor/Delete.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Inventory/Delete.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Editor/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Inventory/Edit.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Editor/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Inventory/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/app.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/app.db-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/app.db-wal" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +118,7 @@
       <workItem from="1730250431007" duration="21621000" />
       <workItem from="1730312721613" duration="3743000" />
       <workItem from="1730322855010" duration="890000" />
-      <workItem from="1730332934879" duration="1539000" />
+      <workItem from="1730332934879" duration="3524000" />
     </task>
     <task id="LOCAL-00001" summary="Commited changes for code">
       <option name="closed" value="true" />
@@ -153,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730310344085</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commited every changes">
+      <option name="closed" value="true" />
+      <created>1730334509526</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730334509526</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +157,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Commited changes for code" />
     <MESSAGE value="Lots of changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lots of changes" />
+    <MESSAGE value="Commited every changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commited every changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
