@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>TorontoWeatherA3139</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Ananta Poudel</Authors>
+        <Description>A simple library to get Toronto weather using Open-Meteo API.</Description>
+        <Title>Toronto Weather App</Title>
+        <Copyright>AnantaPoudel2024</Copyright>
+        <PackageReadmeFile>Readme.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/Ananta580/dotnet_stuff/TorontoWeather/TorontoWeather</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>weather,toronto,.net,json</PackageTags>
+        <PackageReleaseNotes>Initial version of my app</PackageReleaseNotes>
+        <AssemblyVersion>1.1.1.1</AssemblyVersion>
+        <FileVersion>1.1.1.1</FileVersion>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+        <PackageProjectUrl>example.com/tempfornow</PackageProjectUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Readme.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+    
+</Project>
