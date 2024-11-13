@@ -10,9 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c2344d9d-1776-49c3-b06e-ad4feb4b7c61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.A2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/app.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +69,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.A2: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.A2: http">
     <configuration name="A2: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/A2/A2.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -119,6 +116,7 @@
       <workItem from="1730312721613" duration="3743000" />
       <workItem from="1730322855010" duration="890000" />
       <workItem from="1730332934879" duration="3524000" />
+      <workItem from="1731446845032" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="Commited changes for code">
       <option name="closed" value="true" />

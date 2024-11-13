@@ -6,11 +6,11 @@ namespace A3.Controllers;
 public class HomeController : Controller
 {
     // 1a. FileResult Type Demonstrations
-public FileResult FileResultDemo()
-{
-    var fileBytes = System.IO.File.ReadAllBytes("wwwroot/images/card.jpg");
-    return File(fileBytes, "image/png", "card.jpg");
-}
+    public FileResult FileResultDemo()
+    {
+        var fileBytes = System.IO.File.ReadAllBytes("wwwroot/images/card.jpg");
+        return File(fileBytes, "image/png", "card.jpg");
+    }
 
     // 1b. JSONResult Type Demonstrations
     public JsonResult JsonResultDemo()

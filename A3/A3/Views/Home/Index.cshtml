@@ -7,14 +7,14 @@
 
 <!-- 1. ViewBag and ViewData -->
 <div class="mb-8">
-    <h2 class="text-xl font-semibold">ViewBag and ViewData</h2>
+    <h2 class="text-xl font-semibold">2. ViewBag and ViewData</h2>
     <p>ViewBag: <span class="text-indigo-700">@ViewBag.Info</span></p>
     <p>ViewData: <span class="text-indigo-700">@ViewData["Information"]</span></p>
 </div>
 
 <!-- 2. Display Fields Using ViewModel -->
 <div class="mb-8">
-    <h2 class="text-xl font-semibold">User Information (ViewModel)</h2>
+    <h2 class="text-xl font-semibold">3. User Information (ViewModel)</h2>
     <p>Name: <span class="text-indigo-700">@Model.Name</span></p>
     <p>Address: <span class="text-indigo-700">@Model.Address</span></p>
     <p>Email: <span class="text-indigo-700">@Model.Email</span></p>
@@ -23,7 +23,7 @@
 
 <!-- 3. Form for PRG Pattern -->
 <div class="mb-6">
-    <h2 class="text-xl font-semibold">PRG Pattern Demonstration (Theme)</h2>
+    <h2 class="text-xl font-semibold">4. PRG Pattern Demonstration (Theme)</h2>
     <form asp-action="SubmitForm" method="post" class="space-y-4">
         <input type="text" name="inputData" placeholder="Enter a theme (e.g., light/dark)" class="border mt-2 rounded-md p-2 w-full focus:ring-2 focus:ring-indigo-700 focus:outline-none" />
         <button type="submit" class="bg-indigo-800 text-white px-4 py-2 rounded">Submit</button>
